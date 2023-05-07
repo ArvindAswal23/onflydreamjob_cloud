@@ -1,6 +1,6 @@
 import React,  { useEffect }from 'react'
 import styles from '../style'
-import { NavBar,WelcomeScreen,JobByDepartment,JobByType,JobByLocation, Footer } from './index'
+import {WelcomeScreen,JobByDepartment,JobByType,JobByLocation} from './index'
 
 const Home = () => {
   useEffect(() =>{
