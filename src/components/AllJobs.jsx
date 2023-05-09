@@ -47,11 +47,17 @@ const AllJobs = () => {
      };
     
     const renderAllJobs = () => {
-      return jobs.map(({ id,companyName, profileName,minSalary, maxSalary, jobType }) => {
+      return jobs.map(({ id,companyName, profileName,qualifications}) => {
+        var qualification = [];
+        for (var l = 0; l < qualifications.length; l++) {
+          qualification.push(qualifications[l].name);
+          if (l < qualifications.length - 1)
+            qualification.push(", ");
+        }
         return <Tr key={id} className ="hover:bg-gray-50 dark:hover:bg-gray-600">
         <Td className='px-4 py-2 text-left  font-medium text-gray-800 dark:text-white'>{companyName}</Td>
         <Td className='px-4 py-2 text-left  whitespace-nowrap text-gray-700 dark:text-gray-200'>{profileName}</Td>
-        <Td className='px-4 py-2 text-left  whitespace-nowrap text-gray-700 dark:text-gray-200'>{jobType}</Td>
+        <Td className='px-4 py-2 text-left  whitespace-nowrap text-gray-700 dark:text-gray-200'>{qualification}</Td>
         <Td className='px-4 py-2 text-left  whitespace-nowrap text-gray-700 dark:text-gray-200'>
         <button className="px-2 py-2 text-left  text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
         hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800" onClick={(e) => handleJobID(id)}>
@@ -86,7 +92,7 @@ const AllJobs = () => {
                         Profile Name
                       </Th>
                       <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
-                        Job Type</Th>
+                        Qualification</Th>
                       <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
                         View</Th>
                     </Tr>
