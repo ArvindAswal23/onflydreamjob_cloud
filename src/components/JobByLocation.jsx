@@ -23,7 +23,7 @@ const JobByLocation = () => {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
               <div className="p-4 rounded-md flex items-center justify-center">
-                  <button type="button" onClick={(e) => handleJobsByLocation("delhi", e)}
+                  <button type="button" onClick={(e) => handleJobsByLocation("Delhi", e)}
                   className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                    <figure><img src={NewDelhi} alt="" width="100" height="50"/> <figcaption> New Delhi</figcaption> </figure>
                   </button>
