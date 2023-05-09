@@ -10,6 +10,7 @@ const Job = () => {
     const {state} = useLocation();
     const navigate =useNavigate();
     const urlId = useParams();
+    window.scrollTo(0, 0);
     const [jobDetail, setjobDetail] = useState([
     ]);
     useEffect(() => {
@@ -65,50 +66,50 @@ const Job = () => {
                               <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
                                   <tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
                                       <tr>
-                                          <th  className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400">
-                                              <strong> Company Name </strong> </th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.companyName])} </td>
+                                          <th  className="py-4 px-4 text-sm font-medium text-left  text-gray-500 dark:text-gray-400">
+                                              <strong> Organization </strong> </th>
+                                          <td className='px-4 py-4  text-sm text-left font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.companyName])} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"> <strong> Post Name </strong></th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.profileName])} </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <strong> Post Name </strong></th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.profileName])} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"> <strong> Job Type </strong> </th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.jobType])} </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <strong> Job Type </strong> </th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.jobType])} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"><strong> No of Post </strong></th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.noOfOpening])} </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"><strong> No of Post </strong></th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.noOfOpening])} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"> <strong> Qualification </strong></th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{qualifications} </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <strong> Qualification </strong></th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{qualifications} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"> <strong> Application Mode </strong></th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.applicationMode])} </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <strong> Application Mode </strong></th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.applicationMode])} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"> <strong>Eligible Batch </strong></th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.batchEligible])} </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <strong>Eligible Batch </strong></th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.batchEligible])} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"> <strong> Location </strong></th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{locations} </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <strong> Location </strong></th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{locations} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"> <strong> Salary </strong></th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.minSalary])} - {jobDetail.map((jd) => [jd.maxSalary])} LPA <strong>(Our Estimates)</strong> </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <strong> Salary </strong></th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.minSalary])} - {jobDetail.map((jd) => [jd.maxSalary])} LPA <strong>(Our Estimates)</strong> </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"><strong> Last Date To Apply </strong></th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.lastApplyDate])} </td>
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"><strong> Last Date To Apply </strong></th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'>{jobDetail.map((jd) => [jd.lastApplyDate])} </td>
                                       </tr>
                                       <tr>
-                                          <th className="py-4 px-4 text-sm font-normal text-center  text-gray-500 dark:text-gray-400"> <p></p> <strong> Website </strong> </th>
-                                          <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'><a href={jobDetail.map((jd) => [jd.companyOfficialWebsite])} target="_blank" rel="noopener noreferrer">
-                                              <button className="px-2 py-2 text-center text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
+                                          <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <p></p> <strong> Website </strong> </th>
+                                          <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'><a href={jobDetail.map((jd) => [jd.companyOfficialWebsite])} target="_blank" rel="noopener noreferrer">
+                                              <button className="px-2 py-2 text-left text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
                                                 hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
                                                   Company Website</button></a></td>
                                       </tr>
@@ -118,9 +119,9 @@ const Job = () => {
                       </div>
                   </div>
               </div>
-              <div className=' px-4 py-4 font-poppins flex justify-center items-center text-center'>
+              <div className=' px-4 py-4 font-poppins flex justify-center items-center text-left'>
                                       <a href={jobDetail.map((jd) => [jd.applyLink])} target="_blank" rel="noopener noreferrer">
-                                          <button className="px-2 py-2 text-center text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
+                                          <button className="px-2 py-2 text-left text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
                                             hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">Apply</button>
                                       </a>
                                   </div>

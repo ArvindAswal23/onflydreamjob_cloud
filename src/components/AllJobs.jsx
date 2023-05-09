@@ -4,9 +4,12 @@ import axios from "axios";
 import {useNavigate} from "react-router-dom";
 import ReactPaginate from 'react-paginate';
 import '../App.css'
+import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table'
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
+
 const AllJobs = () => {
   const [offset, setOffset] = useState(0);
-  const [perPage] = useState(10);
+  const [perPage] = useState(15);
   const [pageCount, setPageCount] = useState(0)
   const navigate =useNavigate();
   const [jobs, setJobs] = useState([
@@ -42,21 +45,20 @@ const AllJobs = () => {
     const handleJobID =(id) => {
     navigate(`/job/${id}`)
      };
-
+    
     const renderAllJobs = () => {
       return jobs.map(({ id,companyName, profileName,minSalary, maxSalary, jobType }) => {
-        return <tr key={id} className ="hover:bg-gray-50 dark:hover:bg-gray-600">
-        <td className='px-4 py-4 text-center text-sm font-medium text-gray-800 dark:text-white'>{companyName}</td>
-        <td className=' px-12 py-4 text-center text-sm whitespace-nowrap text-gray-700 dark:text-gray-200'>{profileName}</td>
-        <td className='px-4 py-4 text-center text-sm whitespace-nowrap text-gray-700 dark:text-gray-200'>{minSalary} - {maxSalary} LPA</td>
-        <td className='px-4 py-4 text-center text-sm whitespace-nowrap text-gray-700 dark:text-gray-200'>{jobType}</td>
-        <td className='px-4 py-4 text-center text-sm whitespace-nowrap text-gray-700 dark:text-gray-200'>
-        <button className="px-2 py-2 text-center text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
+        return <Tr key={id} className ="hover:bg-gray-50 dark:hover:bg-gray-600">
+        <Td className='px-4 py-2 text-left  font-medium text-gray-800 dark:text-white'>{companyName}</Td>
+        <Td className='px-4 py-2 text-left  whitespace-nowrap text-gray-700 dark:text-gray-200'>{profileName}</Td>
+        <Td className='px-4 py-2 text-left  whitespace-nowrap text-gray-700 dark:text-gray-200'>{jobType}</Td>
+        <Td className='px-4 py-2 text-left  whitespace-nowrap text-gray-700 dark:text-gray-200'>
+        <button className="px-2 py-2 text-left  text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
         hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800" onClick={(e) => handleJobID(id)}>
               View Details
         </button>
-        </td>
-      </tr>
+        </Td>
+      </Tr>
       })
     }
 
@@ -66,57 +68,56 @@ const AllJobs = () => {
     };
 
   return (
-  <div className='bg-primary w-full overflow-hidden'>
-  <section className="container px-4 mx-auto">
-    <h1 className="text-2xl font-medium font-poppin text-gray-800 dark:text-white">All Jobs</h1>
-    <div className="flex flex-col mt-6">
-        <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-            <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-                <div className="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
+    <div className='bg-primary w-full overflow-hidden'>
+      <section className="container px-4 mx-auto">
+        <h1 className="text-2xl text-center md:text-left font-medium font-poppin text-white dark:text-white">List Of All Jobs</h1>
+        <div className="flex flex-col mt-6">
+          <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div className="min-w-min max-w-5xl py-2  md:px-6 lg:px-8">
+              <div className="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
 
-                    <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                        <thead className="bg-gray-50 dark:bg-gray-800">
-                            <tr>
-                                 <th scope="col" className="py-3.5 px-4 text-sm font-normal text-center rtl:text-right text-gray-500 dark:text-gray-400">
-                                        <span>Company Name</span>
-                                 </th>
-                                 <th scope="col" className="px-12 py-3.5 text-sm font-normal text-center rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Post Name 
-                                 </th>
-                                  <th scope="col" className="px-4 py-3.5 text-sm font-normal text-center rtl:text-right text-gray-500 dark:text-gray-400">
-                                    Salary (Estimates)
-                                  </th>
-                                  <th scope="col" className="px-4 py-3.5 text-sm font-normal text-center rtl:text-right text-gray-500 dark:text-gray-400">
-                                  Job Type</th>
-                                  <th scope="col" className="px-4 py-3.5 text-sm font-normal text-center rtl:text-right text-gray-500 dark:text-gray-400">
-                                  View</th>
-                                 </tr>
-                        </thead>
-                        <tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                        {renderAllJobs()}
-                        </tbody>
-                    </table>
-                </div>
+                <Table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                  <Thead className="bg-gray-50 dark:bg-gray-800">
+                    <Tr>
+                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
+                        <span>Organization</span>
+                      </Th>
+                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
+                        Profile Name
+                      </Th>
+                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
+                        Job Type</Th>
+                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
+                        View</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+                    {renderAllJobs()}
+                  </Tbody>
+                </Table>
+              </div>
+              <div className="flex justify-center items-center">
+                <ReactPaginate
+                  previousLabel={"Previous"}
+                  nextLabel={"Next"}
+                  breakLabel={"..."}
+                  breakClassName={"break-me"}
+                  pageCount={pageCount}
+                  marginPagesDisplayed={2}
+                  pageRangeDisplayed={2}
+                  onPageChange={handlePageClick}
+                  containerClassName={"pagination"}
+                  subContainerClassName={"pages pagination"}
+                  renderOnZeroPageCount={null}
+                  activeClassName={"active"} />
+              </div>
             </div>
+          </div>
         </div>
+        <div>
+        </div>
+      </section>
     </div>
-    <div className='flex justify-center items-center'>
-    <ReactPaginate
-            previousLabel={"Previous"}
-            nextLabel={"Next"}
-            breakLabel={"..."}
-            breakClassName={"break-me"}
-            pageCount={pageCount}
-            marginPagesDisplayed={2}
-            pageRangeDisplayed={2}
-            onPageChange={handlePageClick}
-            containerClassName={"pagination"}
-            subContainerClassName={"pages pagination"}
-            renderOnZeroPageCount={null}
-            activeClassName={"active"} />
-            </div>
-</section>
-</div>
   )
 }
 
