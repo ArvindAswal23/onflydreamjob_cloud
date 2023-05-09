@@ -10,9 +10,9 @@ const Job = () => {
     const {state} = useLocation();
     const navigate =useNavigate();
     const urlId = useParams();
-    window.scrollTo(0, 0);
     const [jobDetail, setjobDetail] = useState([
     ]);
+    window.scrollTo(0, 0);
     useEffect(() => {
         document.title="Jobs | Onfly Dream Job";
         getJobData(urlId);

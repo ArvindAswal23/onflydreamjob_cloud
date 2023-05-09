@@ -21,7 +21,7 @@ const JobByLocation = () => {
       </h1>
         </div>
         <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
               <div className="p-4 rounded-md flex items-center justify-center">
                   <button type="button" onClick={(e) => handleJobsByLocation("Delhi", e)}
                   className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
@@ -29,38 +29,45 @@ const JobByLocation = () => {
                   </button>
               </div>
               <div className="p-4 rounded-md flex items-center justify-center">
-                  <button type="button" className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                  <button type="button" onClick={(e) => handleJobsByLocation("Mumbai", e)}
+                  className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                   <figure><img src={Mumbai} alt="" width="100" height="50"/> <figcaption> Mumbai</figcaption> </figure>
                   </button>
               </div>
               <div className="p-4 rounded-md flex items-center justify-center">
-                  <button type="button" className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                  <button type="button" onClick={(e) => handleJobsByLocation("Pune", e)}
+                  className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                   <figure><img src={Pune} alt="" width="100" height="50"/> <figcaption> Pune</figcaption> </figure>
                   </button>
               </div>
               <div className="p-4 rounded-md flex items-center justify-center">
-                  <button type="button" className="text-white hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                  <button type="button" onClick={(e) => handleJobsByLocation("Bangalore", e)}
+                  className="text-white hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                     <figure><img src={Bangalore} alt="" width="100" height="50"/> <figcaption>Bangalore</figcaption> </figure>
                   </button>
               </div>
               <div className="p-4 rounded-md flex items-center justify-center">
-                  <button type="button" className="text-white hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                  <button type="button" onClick={(e) => handleJobsByLocation("Gurugram", e)}
+                  className="text-white hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                   <figure><img src={Gurugram} alt="" width="100" height="50"/> <figcaption>Gurugram</figcaption> </figure>
                   </button>
               </div>
               <div className="p-4 rounded-md flex items-center justify-center">
-                  <button type="button" className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                  <button type="button" onClick={(e) => handleJobsByLocation("Hyderabad", e)}
+                  className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                   <figure><img src={Hyderabad} alt="" width="100" height="50"/> <figcaption>Hyderabad</figcaption> </figure>
                   </button>
               </div>
               <div className="p-4 rounded-md flex items-center justify-center">
-                  <button type="button" className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 
+                  <button type="button" onClick={(e) => handleJobsByLocation("Chennai", e)}
+                  className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 
                   text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                   <figure> <img src={Chennai} alt="" width="100" height="50"/><figcaption>Chennai</figcaption> </figure>
                   </button>
               </div>
               <div className="p-4 rounded-md flex items-center justify-center">
-                  <button type="button" className="text-white hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                  <button type="button" onClick={(e) => handleJobsByLocation("Goa", e)}
+                  className="text-white hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                    <figure><img src={Goa} alt="" width="100" height="50"/> <figcaption>Goa</figcaption> </figure>
                   </button>
               </div>

@@ -11,7 +11,7 @@ const AllJobs = () => {
   const [offset, setOffset] = useState(0);
   const [perPage] = useState(15);
   const [pageCount, setPageCount] = useState(0)
-  const navigate =useNavigate();
+  const navigate = useNavigate();
   const [jobs, setJobs] = useState([
   ]);
     useEffect(() =>{
@@ -34,10 +34,7 @@ const AllJobs = () => {
         (error) => {
           // for error
           console.log(error);
-          toast.error("No Jobs Found", {
-            position: toast.POSITION.BOTTOM_CENTER,
-            toastId: 'error1',
-        });
+          navigate('*');
         }
       );
     };
