@@ -14,6 +14,7 @@ const AllJobs = () => {
   const navigate = useNavigate();
   const [jobs, setJobs] = useState([
   ]);
+    window.scrollTo(0, 0);
     useEffect(() =>{
         document.title="All Jobs | Onfly Dream Job";
         getAllJobs();
