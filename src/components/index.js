@@ -9,6 +9,12 @@ import AllJobs from "./AllJobs";
 import Job from "./Job";
 import AllJobByLocation from "./AllJobByLocation";
 import ErrorPage from "./ErrorPage";
+import NoJobFound from "./NoJobFound";
+import AllJobByDepartment from "./AllJobByDepartment";
+import ALlJobByType from "./AllJobByType";
+import AboutUs from "./AboutUs";
+import ContactUs from "./ContactUs";
+
 export {
   NavBar,
   JobByDepartment,
@@ -20,5 +26,10 @@ export {
   AllJobs,
   AllJobByLocation,
   Job,
-  ErrorPage
+  ErrorPage,
+  NoJobFound,
+  AllJobByDepartment,
+  ALlJobByType,
+  AboutUs,
+  ContactUs
 };

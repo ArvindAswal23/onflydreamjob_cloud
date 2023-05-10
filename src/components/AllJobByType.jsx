@@ -9,47 +9,48 @@ import '../App.css'
 import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table'
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
-const AllJobByLocation = () => {
-    const [offset, setOffset] = useState(0);
-    const [perPage] = useState(15);
-    const [pageCount, setPageCount] = useState(0)
-    const navigate= useNavigate();
-    const {state}= useLocation();
-    const urlParam= useParams();
-    const [AllJobByLocation, setAllJobByLocation] = useState([
-    ]);
-    window.scrollTo(0, 0);
-    useEffect(() => {
-      const title = urlParam.location;
-      document.title= title + " | Onfly Dream Job";
-      getJobLocationData(urlParam);
-    }, [offset]);
+const AllJobByType = () => {
+  const [offset, setOffset] = useState(0);
+  const [perPage] = useState(15);
+  const [pageCount, setPageCount] = useState(0)
+  const navigate= useNavigate();
+  const {state}= useLocation();
+  const urlParam= useParams();
+  const [AllJobByType, setAllJobByType] = useState([
+  ]);
+  window.scrollTo(0, 0);
+  useEffect(() => {
+    const title = urlParam.jobtype;
+    document.title= title + " | Onfly Dream Job";
+    getJobTypeData(urlParam);
+  }, [offset]);
 
       //get all jobs acoording to jobs by from backend
-    const getJobLocationData = (urlParam) => {
-      let location = urlParam.location;
-      axios.get(`${base_url}/home/location/${location}/0`).then(
-        (response) => {
-        const data = response.data.content;
-        const slice = data.slice(offset, offset + perPage);
-        setAllJobByLocation(slice);
-        setPageCount(Math.ceil(data.length / perPage));
-      },
-      (error) => {
-        // for error
-        console.log(error);
-        navigate('*');
-        }
-      )
-    };
-  // Pass the particular job id to the url
+      const getJobTypeData = (urlParam) => {
+        let jobtype = urlParam.jobtype;
+        axios.get(`${base_url}/home/jobType/${jobtype}/0`).then(
+          (response) => {
+          const data = response.data.content;
+          const slice = data.slice(offset, offset + perPage);
+          setAllJobByType(slice);
+          setPageCount(Math.ceil(data.length / perPage));
+        },
+        (error) => {
+          // for error
+          console.log(error);
+          navigate('*');
+          }
+        )
+      };
+
+      // Pass the particular job id to the url
     const handleJobID =(id) => {
-      navigate(`/job/${id}`)
+       navigate(`/job/${id}`)
     };
 
-    const renderAllJobsByLocation = () => {
-      if (AllJobByLocation.length > 0)
-      return AllJobByLocation.map(({ id,companyName, profileName,qualifications}) => {
+    const renderAllJobsByType = () => {
+      if (AllJobByType.length > 0)
+      return AllJobByType.map(({ id,companyName, profileName,qualifications}) => {
         var qualification = [];
         for (var l = 0; l < qualifications.length; l++) {
           qualification.push(qualifications[l].name);
@@ -78,10 +79,11 @@ const AllJobByLocation = () => {
       setOffset(selectedPage);
     };
 
+
   return (
     <div className='bg-primary w-full overflow-hidden'>
     <section className="container px-4 mx-auto">
-      <h1 className="text-2xl text-center md:text-left font-medium font-poppin text-white dark:text-white">List Of All Jobs By "{urlParam.location}" </h1>
+      <h1 className="text-2xl text-center md:text-left font-medium font-poppin text-white dark:text-white">List Of All Jobs By "{urlParam.jobtype}" </h1>
       <div className="flex flex-col mt-6">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="min-w-min max-w-5xl py-2  md:px-6 lg:px-8">
@@ -103,7 +105,7 @@ const AllJobByLocation = () => {
                   </Tr>
                 </Thead>
                 <Tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                  {renderAllJobsByLocation()}
+                  {renderAllJobsByType()}
                 </Tbody>
               </Table>
             </div>
@@ -131,4 +133,5 @@ const AllJobByLocation = () => {
   </div>
   )
 }
-export default AllJobByLocation
+
+export default AllJobByType
