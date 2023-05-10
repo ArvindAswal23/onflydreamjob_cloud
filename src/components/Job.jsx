@@ -57,7 +57,7 @@ const Job = () => {
 
   return (  
       <div className='bg-primary w-full overflow-hidden'>
-          <div className="text-2xl font-medium font-poppin text-gray-800 dark:text-white text-black"> <h2 className="text-center">Job Details For "{jobDetail.map((jd) => [jd.companyName])}"</h2></div>
+          <div className="text-2xl font-medium font-poppin  dark:text-white text-white"> <h2 className="text-center">Job Details For "{jobDetail.map((jd) => [jd.companyName])}"</h2></div>
           <section className="container px-4 mx-auto">
               <div className="flex flex-col mt-6">
                   <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">

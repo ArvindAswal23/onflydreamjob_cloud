@@ -79,22 +79,22 @@ const AllJobs = () => {
             <div className="min-w-min max-w-5xl py-2  md:px-6 lg:px-8">
               <div className="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
 
-                <Table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                <Table className="min-w-full divide-y divide-gray-700 dark:divide-gray-700">
                   <Thead className="bg-gray-50 dark:bg-gray-800">
                     <Tr>
-                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
+                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-black text-left">
                         <span>Organization</span>
                       </Th>
-                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
+                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-black text-left">
                         Profile Name
                       </Th>
-                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
+                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-black text-left">
                         Qualification</Th>
-                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-white text-left">
+                      <Th scope="col" className="px-4 py-4 text-sm font-normal font-bold text-black text-left">
                         View</Th>
                     </Tr>
                   </Thead>
-                  <Tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+                  <Tbody className="bg-white divide-y divide-gray-700 dark:divide-gray-700 dark:bg-gray-900">
                     {renderAllJobs()}
                   </Tbody>
                 </Table>
