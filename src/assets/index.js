@@ -34,9 +34,24 @@ import Gurugram from "./Gurugram.png";
 import Chennai from "./Chennai.png";
 import Company_logo from "./Company_Logo.svg";
 import telegram from "./telegram.svg";
+import M_Tech from "./M_Tech.png";
+import B_Tech from "./B_Tech.png";
+import BCA from "./BCA.png";
+import MBA from "./MBA.png";
+import Fresher from "./Fresher.png";
+import Experience from "./Experience.png";
+import Internship from "./Internship.png";
+import OFF_Campus from "./OFF_Campus.png";
 
 export {
   Mumbai,
+  B_Tech,
+  BCA,
+  MBA,
+  Fresher, 
+  Experience,
+  Internship,
+  OFF_Campus,
   telegram,
   Pune,
   Bangalore,
@@ -71,5 +86,6 @@ export {
   people03,
   NewDelhi,
   Company_logo,
-  logo2
+  logo2,
+  M_Tech
 };
