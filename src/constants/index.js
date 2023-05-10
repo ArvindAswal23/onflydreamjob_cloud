@@ -93,7 +93,7 @@ export const footerLinks = [
     title: "Useful Links",
     links: [
       {
-        name: "Content",
+        name: "Resume",
         link: "https://www.hoobank.com/content/",
       },
       {
