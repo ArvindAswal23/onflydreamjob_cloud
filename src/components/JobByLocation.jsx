@@ -11,7 +11,7 @@ const JobByLocation = () => {
    // pass particular location to url and navigate to all jobs by location
    const handleJobsByLocation = (location, e) => {
     e.preventDefault();
-    navigate(`/AllJobByLocation/${location}`)
+    navigate(`/alljobsbylocation/${location}`)
   };
   return (
     <section className="">

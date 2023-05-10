@@ -2,10 +2,10 @@ import React from 'react'
 import {useNavigate} from "react-router-dom";
 
 const ErrorPage = () => {
-    const navigate =useNavigate();
-    const handleBack =() => {
+    const navigate = useNavigate();
+    const handleBack = () => {
         navigate('/')
-         };
+    };
   return (
     <section class="bg-white dark:bg-gray-900 ">
     <div class="container flex items-center min-h-screen px-6 py-12 mx-auto">
@@ -15,7 +15,7 @@ const ErrorPage = () => {
             <p class="mt-4 text-gray-500 dark:text-gray-400">Sorry, the page you are looking for doesn't exist or has been moved.</p>
 
             <div class="flex items-center mt-6 gap-x-3">
-
+                
                 <button class="w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 bg-blue-500 rounded-lg shrink-0 sm:w-auto hover:bg-blue-600 dark:hover:bg-blue-500 dark:bg-blue-600"
                     onClick={(e) => handleBack()}>
                     Take me home
