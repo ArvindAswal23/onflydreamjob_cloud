@@ -1,7 +1,4 @@
-import React , { useState, useEffect }from 'react'
-import styles from "../style";
-import base_url from "../api/urls";
-import axios from "axios";
+import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { NewDelhi, Mumbai, Pune, Bangalore, Gurugram, Hyderabad, Chennai, Goa } from '../assets';
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './style'
-import { NavBar,Footer, Home,AllJobs,AllJobByLocation,Job,ErrorPage,NoJobFound} from './components/index'
+import { NavBar,Footer, Home,AllJobs,AllJobByLocation,Job,ErrorPage,NoJobFound,ALlJobByType,AllJobByDepartment} from './components/index'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 const App = () => {
   return (
@@ -19,6 +19,8 @@ const App = () => {
           <Route path="/" element={<Home />} exact />
           <Route path="/alljobs" element={<AllJobs />} exact />
           <Route path="/alljobsbylocation/:location" element={<AllJobByLocation />} exact />
+          <Route path="/alljobsbydepartment/:department" element={<AllJobByDepartment />} exact />
+          <Route path="/alljobsbytype/:jobtype" element={<ALlJobByType />} exact />
           <Route path="/job/:id" element={<Job />} exact />
           <Route path="*" element={<ErrorPage />} ></Route>
           <Route path="/nojobfound" element={<NoJobFound />} ></Route>

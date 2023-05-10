@@ -1,7 +1,16 @@
 import React from 'react'
 import styles from "../style";
-import { NewDelhi, Mumbai, Pune, Bangalore,M_Tech,B_Tech,BCA,MBA } from '../assets';
+import { useNavigate } from "react-router-dom";
+import { M_Tech,B_Tech,BCA,MBA } from '../assets';
+
+
 const JobByDepartment = () => {
+  const navigate = useNavigate();
+   // pass particular location to url and navigate to all jobs by location
+   const handleJobsByDepartment = (department, e) => {
+    e.preventDefault();
+    navigate(`/alljobsbydepartment/${department}`)
+  };
   return (
     <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
     <div className="py-8 px-1mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
@@ -12,22 +21,26 @@ const JobByDepartment = () => {
       <div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-8">
             <div className="p-4 rounded-md flex items-center justify-center">
-                <button type="button" className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                <button type="button" onClick={(e) => handleJobsByDepartment("me", e)}
+                className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                  <figure><img src={M_Tech} alt="" width="100" height="50"/> <figcaption>M.Tech</figcaption> </figure>
                 </button>
             </div>
             <div className="p-4 rounded-md flex items-center justify-center">
-                <button type="button" className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                <button type="button" onClick={(e) => handleJobsByDepartment("be", e)}
+                className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                 <figure><img src={B_Tech} alt="" width="100" height="50"/> <figcaption> B.Tech</figcaption> </figure>
                 </button>
             </div>
             <div className="p-4 rounded-md flex items-center justify-center">
-                <button type="button" className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                <button type="button" onClick={(e) => handleJobsByDepartment("mba", e)}
+                className="text-white  hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                 <figure><img src={MBA} alt="" width="100" height="50"/> <figcaption> MBA </figcaption> </figure>
                 </button>
             </div>
             <div className="p-4 rounded-md flex items-center justify-center">
-                <button type="button" className="text-white hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
+                <button type="button" onClick={(e) => handleJobsByDepartment("bca", e)}
+                className="text-white hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2">
                   <figure><img src={BCA} alt="" width="100" height="50"/> <figcaption> BCA </figcaption> </figure>
                 </button>
             </div>

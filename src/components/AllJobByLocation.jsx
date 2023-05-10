@@ -20,10 +20,10 @@ const AllJobByLocation = () => {
     ]);
     window.scrollTo(0, 0);
     useEffect(() => {
-    const title = urlParam.location;
-     document.title= title + " | Onfly Dream Job";
-    getJobLocationData(urlParam);
-  }, [offset]);
+      const title = urlParam.location;
+      document.title= title + " | Onfly Dream Job";
+      getJobLocationData(urlParam);
+    }, [offset]);
 
       //get all jobs acoording to jobs by from backend
     const getJobLocationData = (urlParam) => {
@@ -81,7 +81,7 @@ const AllJobByLocation = () => {
   return (
     <div className='bg-primary w-full overflow-hidden'>
     <section className="container px-4 mx-auto">
-      <h1 className="text-2xl text-center md:text-left font-medium font-poppin text-white dark:text-white">List Of All Jobs By {urlParam.location} </h1>
+      <h1 className="text-2xl text-center md:text-left font-medium font-poppin text-white dark:text-white">List Of All Jobs By "{urlParam.location}" </h1>
       <div className="flex flex-col mt-6">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="min-w-min max-w-5xl py-2  md:px-6 lg:px-8">
