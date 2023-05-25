@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-  <url>
-    <loc>https://www.onflydreamjob.com/</loc>
-    <lastmod>2023-05-22T18:55:26+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://onflydreamjob.com/home</loc>
-    <lastmod>2023-05-25T16:49:03+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://onflydreamjob.com/alljobs</loc>
-    <lastmod>2023-05-25T16:46:52+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://onflydreamjob.com/job/220</loc>
-    <lastmod>2023-05-25T16:47:40+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://onflydreamjob.com/aboutus</loc>
-    <lastmod>2023-05-25T16:48:10+00:00</lastmod>
-  </url>
-  <url>
-    <loc>https://onflydreamjob.com/contactus</loc>
-    <lastmod>2023-05-25T16:48:40+00:00</lastmod>
-  </url>
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.onflydreamjob.com/</loc>
+		<lastmod>2023-05-22T18:55:26+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://onflydreamjob.com/home</loc>
+		<lastmod>2023-05-25T16:49:03+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://onflydreamjob.com/alljobs</loc>
+		<lastmod>2023-05-25T16:46:52+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://onflydreamjob.com/job/220</loc>
+		<lastmod>2023-05-25T16:47:40+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://onflydreamjob.com/aboutus</loc>
+		<lastmod>2023-05-25T16:48:10+00:00</lastmod>
+	</url>
+	<url>
+		<loc>https://onflydreamjob.com/contactus</loc>
+		<lastmod>2023-05-25T16:48:40+00:00</lastmod>
+	</url>
 </urlset>
