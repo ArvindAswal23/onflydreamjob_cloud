@@ -14,11 +14,9 @@ const Job = () => {
     ]);
     window.scrollTo(0, 0);
     useEffect(() => {
-        document.title="Jobs | Onfly Dream Job";
         getJobData(urlId);
       }, []);
 
-    
     const getJobData = (urlId) => {
     var id = urlId.id;
     axios.get(`${base_url}/getJob/${id}`).then(
@@ -33,7 +31,8 @@ const Job = () => {
       }
     )
   };  
-
+  const title = jobDetail.map((jd) => [jd.companyName]);
+  document.title="Job | "+title+" | Onfly Dream Job";
   const createdOn = jobDetail.map((jd) =>[jd.createdOn]);
   const dateTimeAgo = moment(new Date(createdOn)).fromNow();
     var locations = [];
@@ -110,7 +109,7 @@ const Job = () => {
                                           <th className="py-4 px-4 text-sm font-normal text-left  text-gray-500 dark:text-gray-400"> <p></p> <strong> Website </strong> </th>
                                           <td className='px-4 py-4 text-left text-sm font-medium text-gray-800 dark:text-white'><a href={jobDetail.map((jd) => [jd.companyOfficialWebsite])} target="_blank" rel="noopener noreferrer">
                                               <button className="px-2 py-2 text-left text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
-                                                hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">
+                                                hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 ring-2 ring-blue-500">
                                                   Company Website</button></a></td>
                                       </tr>
                                   </tbody>
@@ -119,13 +118,18 @@ const Job = () => {
                       </div>
                   </div>
               </div>
-              <div className=' px-4 py-4 font-poppins flex justify-center items-center text-left'>
+              <div className=' px-4 py-4 font-poppins flex justify-left items-left text-left'>
+              <div className='px-8 py-4 font-poppins flex justify-center items-center text-left'>
+                                       <p className='  text-sm px-4 py-2 flex justify-center items-center text-white text-left font-poppins'> Note: Apply the job before link expires </p>
+                                      </div>
+                                      <div className='px-8 py-4 font-poppins flex justify-center items-center text-left'>
                                       <a href={jobDetail.map((jd) => [jd.applyLink])} target="_blank" rel="noopener noreferrer">
-                                          <button className="px-2 py-2 text-left text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
-                                            hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800">Apply</button>
+                                          <button className="px-4 py-2 text-left text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
+                                            hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 ring-2 ring-blue-500">Apply Link</button>
                                       </a>
-                                  </div>
-          </section>
+                                      </div>
+                                      </div>
+          </section>\
       </div>
   )
 }
