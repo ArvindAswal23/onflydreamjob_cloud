@@ -125,11 +125,12 @@ const Job = () => {
                                       <div className='px-8 py-4 font-poppins flex justify-center items-center text-left'>
                                       <a href={jobDetail.map((jd) => [jd.applyLink])} target="_blank" rel="noopener noreferrer">
                                           <button className="px-4 py-2 text-left text-sm text-gray-700 capitalize transition-colors duration-200 bg-white border rounded-md gap-x-2 
-                                            hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 ring-2 ring-blue-500">Apply Link</button>
+                                            hover:bg-gray-100 dark:bg-gray-900 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 ring-2 ring-blue-500"
+                                            onclick="ApplyLinkTracking({jobDetail.map((jd) => [jd.applyLink])}); return false;">Apply Link</button>
                                       </a>
                                       </div>
                                       </div>
-          </section>\
+          </section>
       </div>
   )
 }
