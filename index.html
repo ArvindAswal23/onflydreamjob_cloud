@@ -8,6 +8,15 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-E98J7C1TMW');
+      // Apply link Code to Track Link Clicks
+      var ApplyLinkTracking = function(url) {
+      gtag('event', 'OurNewEvent2023', {
+      'event_category': 'JobApplyLink',
+      'event_label': url,
+      'transport_type': 'beacon',
+      'event_callback': function(){document.location = url;}
+});
+}
     </script>
     <script>const global = globalThis;</script>
     <meta charset="UTF-8" />
