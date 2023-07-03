@@ -14,6 +14,11 @@ import AllJobByDepartment from "./AllJobByDepartment";
 import ALlJobByType from "./AllJobByType";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
+import Articles from "./Articles";
+import Article1 from "./Article1";
+import Article2 from "./Article2";
+import Article3 from "./Article3";
+import LatestArticleSection from "./LatestArticleSection";
 
 export {
   NavBar,
@@ -31,5 +36,10 @@ export {
   AllJobByDepartment,
   ALlJobByType,
   AboutUs,
-  ContactUs
+  ContactUs,
+  Articles,
+  Article1,
+  Article2,
+  Article3,
+  LatestArticleSection
 };
