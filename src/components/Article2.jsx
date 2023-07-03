@@ -17,7 +17,7 @@ const Article2 = () => {
                                     <img class="mr-4 w-16 h-16 rounded-full" src="https://picsum.photos/32/32/?random" alt="OnflyDreamJob" />
                                     <div>
                                         <p class="text-xl font-bold text-black">OnflyDreamJob</p>
-                                        <p class="text-base font-light text-gray-500">2 July 2023, 3 min read</p>
+                                        <p class="text-base font-light text-gray-500">2 July 2023, 5 min read</p>
                                     </div>
                                 </div>
                             </address>
