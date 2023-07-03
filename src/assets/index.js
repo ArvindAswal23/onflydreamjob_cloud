@@ -42,6 +42,9 @@ import Fresher from "./Fresher.png";
 import Experience from "./Experience.png";
 import Internship from "./Internship.png";
 import OFF_Campus from "./OFF_Campus.png";
+import Article_placeholder from './Article_placeholder.jpg';
+import JobTips from './JobTips.jpg';
+import CloudComputing from './CloudComputing.jpg';
 
 export {
   Mumbai,
@@ -87,5 +90,8 @@ export {
   NewDelhi,
   Company_logo,
   logo2,
-  M_Tech
+  M_Tech,
+  Article_placeholder,
+  JobTips,
+  CloudComputing
 };
