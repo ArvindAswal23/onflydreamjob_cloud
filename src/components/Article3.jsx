@@ -5,7 +5,7 @@ import {LatestArticleSection} from  './index'
 const Article3 = () => {
     window.scrollTo(0, 0);
     useEffect(() =>{
-        document.title="Article1 | Onfly Dream Job"
+        document.title="Article 3 | Onfly Dream Job"
     })
     return (
         
