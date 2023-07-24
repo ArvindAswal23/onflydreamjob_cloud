@@ -21,6 +21,10 @@ export const navLinks = [
     id: "articles",
     title: "Articles",
   },
+  {
+    id: "resumeBuilder",
+    title: "Resume Builder"
+  }
 ];
 
 export const features = [

@@ -20,6 +20,7 @@ import Article2 from "./Article2";
 import Article3 from "./Article3";
 import LatestArticleSection from "./LatestArticleSection";
 import Article4 from "./Article4";
+import ResumeBuilder from "./ResumeBuilder";
 export {
   NavBar,
   JobByDepartment,
@@ -41,6 +42,7 @@ export {
   Article1,
   Article2,
   Article3,
+  ResumeBuilder,
   LatestArticleSection,
   Article4
 };
