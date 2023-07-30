@@ -45,7 +45,8 @@ import OFF_Campus from "./OFF_Campus.png";
 import Article_placeholder from './Article_placeholder.jpg';
 import JobTips from './JobTips.jpg';
 import CloudComputing from './CloudComputing.jpg';
-import SoftSkill from './softskill.jpg'
+import SoftSkill from './softskill.jpg';
+import Rupee from './Rupee.jpg'
 export {
   Mumbai,
   B_Tech,
@@ -94,5 +95,6 @@ export {
   Article_placeholder,
   JobTips,
   CloudComputing,
-  SoftSkill
+  SoftSkill,
+  Rupee
 };

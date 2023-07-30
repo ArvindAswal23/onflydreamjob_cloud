@@ -5,6 +5,18 @@ import { navLinks } from '../constants';
 const NavBar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
+  const [pointerEvent, setPointerEvent] = useState(false);
+
+  const setIframeCss = (value) => {
+    const element = document.getElementById("iframe1");
+    if (value == true) {
+      element.className ="iframeCss";
+      setPointerEvent(true);
+    } else {
+      element.classList.remove('iframeCss');
+      setPointerEvent(false);
+    }
+}  
   return (
    <nav className='w-full flex py-6 justify-between items-center navbar'>
     {/* <img src={logo2} alt="onflydreamjoblogo" className='w-[124px] h-[32px]'/> */}
@@ -25,15 +37,15 @@ const NavBar = () => {
           src={toggle ? close : menu}
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
+          onClick={() => {setToggle(!toggle); setIframeCss(!pointerEvent)}}
         />
 
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
+          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-full rounded-xl sidebar z-10`}
         >
-          <ul className="list-none flex justify-end items-start flex-1 flex-col">
+          <ul className="list-none flex justify-end items-center flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}

@@ -1,5 +1,5 @@
 import { React, useEffect } from 'react'
-import { Article_placeholder, CloudComputing, JobTips, SoftSkill } from '../assets'
+import { Article_placeholder, CloudComputing, JobTips, SoftSkill, Rupee } from '../assets'
 import { Link } from 'react-router-dom';
 
 const Articles = () => {
@@ -17,14 +17,59 @@ const Articles = () => {
                     {/* <!-- Article --> */}
                     <article class="overflow-hidden rounded-lg shadow-lg">
 
-                        <a href="/article1">
+                        <a href="/article5">
+                            <img alt="Placeholder" class="block" src={Rupee} width={300} height={250} />
+                        </a>
+
+                        <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                            <h1 class="text-lg">
+                                <a class="no-underline hover:underline text-black" href="/article5">
+                                    The Concept of 20 LPA Jobs and Why Only Tier 1 Colleges?
+                                </a>
+                                <div class="flex items-center justify-between">
+                                    <p class="text-grey-darker text-sm">
+                                        2 min read
+                                    </p>
+                                    <p class="text-grey-darker text-sm">
+                                        17 July 2023
+                                    </p>
+                                </div>
+                            </h1>
+                        </header>
+
+                        <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                            <a class="flex items-center no-underline hover:underline text-black" href="#">
+                                <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random" />
+                                <p class="ml-2 text-sm">
+                                    OnflyDreamJob
+                                </p>
+                            </a>
+
+                            {/* <a class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" href="">
+    Read more
+</a> */}
+                            <Link class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center" to="/article5"> Read more</Link>
+                        </footer>
+                    </article>
+                    {/* <!-- END Article --> */}
+
+                </div>
+                {/* <!-- END Column --> */}
+                
+                {/* <!-- Column --> */}
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+
+                    {/* <!-- Article --> */}
+                    <article class="overflow-hidden rounded-lg shadow-lg">
+
+                        <a href="/article4">
                             <img alt="Placeholder" class="block" src={SoftSkill} width={300} height={250} />
                         </a>
 
                         <header class="flex items-center justify-between leading-tight p-2 md:p-4">
                             <h1 class="text-lg">
-                                <a class="no-underline hover:underline text-black" href="#">
-                                Why is Soft Skills an Art? Find it out here
+                                <a class="no-underline hover:underline text-black" href="/article4">
+                                    Why is Soft Skills an Art? Find it out here
                                 </a>
                                 <div class="flex items-center justify-between">
                                     <p class="text-grey-darker text-sm">
@@ -68,7 +113,7 @@ const Articles = () => {
 
                         <header class="flex items-center justify-between leading-tight p-2 md:p-4">
                             <h1 class="text-lg">
-                                <a class="no-underline hover:underline text-black" href="#">
+                                <a class="no-underline hover:underline text-black" href="/article1">
                                     How to find an off campus job as a fresher?
                                 </a>
                                 <div class="flex items-center justify-between">
