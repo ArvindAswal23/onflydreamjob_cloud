@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
@@ -23,5 +24,7 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [ require('@tailwindcss/typography'),],
+  plugins: [  require('@tailwindcss/typography'),
+              require('@tailwindcss/forms'),
+            ],
 };
