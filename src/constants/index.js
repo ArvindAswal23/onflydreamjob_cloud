@@ -10,8 +10,12 @@ export const navLinks = [
     title: "Jobs",
   },
   {
+    id: "governmentjobs",
+    title: "Govt. Jobs",
+  },
+  {
     id: "aboutus",
-    title: "About US",
+    title: "About Us",
   },
   {
     id: "contactus",

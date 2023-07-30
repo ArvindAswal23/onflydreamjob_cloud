@@ -20,6 +20,8 @@ import Article2 from "./Article2";
 import Article3 from "./Article3";
 import LatestArticleSection from "./LatestArticleSection";
 import Article4 from "./Article4";
+import Article5 from "./Article5";
+import GovernmentJobs from "./GovernmentJobs";
 export {
   NavBar,
   JobByDepartment,
@@ -42,5 +44,7 @@ export {
   Article2,
   Article3,
   LatestArticleSection,
-  Article4
+  Article4,
+  Article5,
+  GovernmentJobs
 };
