@@ -14,6 +14,7 @@ import AllJobByDepartment from "./AllJobByDepartment";
 import ALlJobByType from "./AllJobByType";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
+import ResumeBuilder from "./resumeBuilder";
 import Articles from "./Articles";
 import Article1 from "./Article1";
 import Article2 from "./Article2";
@@ -41,6 +42,7 @@ export {
   Article1,
   Article2,
   Article3,
+  ResumeBuilder,
   LatestArticleSection,
   Article4
 };
