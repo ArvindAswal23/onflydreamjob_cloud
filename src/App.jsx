@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style'
 import { NavBar,Footer, Home,AllJobs,AllJobByLocation,Job,ErrorPage,NoJobFound,ALlJobByType,AllJobByDepartment,AboutUs,ContactUs,
-  Articles,Article1,Article2,Article3,Article4, RBGoogleForm, ResumeBuilder} from './components/index'
+  Articles,Article1,Article2,Article3,Article4,Article5,GovernmentJobs, RBGoogleForm, ResumeBuilder} from './components/index'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const App = () => {
@@ -33,6 +33,8 @@ const App = () => {
           <Route path="/article2" element={<Article2/>} exact />
           <Route path="/article3" element={<Article3/>} exact />
           <Route path="/article4" element={<Article4/>} exact />
+          <Route path="/article5" element={<Article5/>} exact />
+          <Route path="/governmentjobs" element={<GovernmentJobs/>} exact />
           <Route path="*" element={<ErrorPage />} ></Route>
           <Route path="/nojobfound" element={<NoJobFound />} ></Route>
         </Routes>
