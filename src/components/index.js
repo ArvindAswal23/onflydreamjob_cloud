@@ -22,7 +22,6 @@ import Article3 from "./Article3";
 import LatestArticleSection from "./LatestArticleSection";
 import Article4 from "./Article4";
 import Article5 from "./Article5";
-import GovernmentJobs from "./GovernmentJobs";
 import RBGoogleForm from "./RBGoogleForm";
 export {
   NavBar,
@@ -49,6 +48,5 @@ export {
   LatestArticleSection,
   Article4,
   Article5,
-  GovernmentJobs,
   RBGoogleForm
 };
