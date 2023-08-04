@@ -21,6 +21,7 @@ import Article2 from "./Article2";
 import Article3 from "./Article3";
 import LatestArticleSection from "./LatestArticleSection";
 import Article4 from "./Article4";
+import RBGoogleForm from "./RBGoogleForm";
 export {
   NavBar,
   JobByDepartment,
@@ -44,5 +45,6 @@ export {
   Article3,
   ResumeBuilder,
   LatestArticleSection,
-  Article4
+  Article4,
+  RBGoogleForm
 };

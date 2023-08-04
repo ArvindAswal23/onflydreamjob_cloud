@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './style'
 import { NavBar,Footer, Home,AllJobs,AllJobByLocation,Job,ErrorPage,NoJobFound,ALlJobByType,AllJobByDepartment,AboutUs,ContactUs,
-  Articles,Article1,Article2,Article3,Article4} from './components/index'
+  Articles,Article1,Article2,Article3,Article4, RBGoogleForm, ResumeBuilder} from './components/index'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ResumeBuilder from './components/resumeBuilder';
+
 const App = () => {
   return (
    
@@ -27,6 +27,7 @@ const App = () => {
           <Route path="/aboutus" element={<AboutUs />} exact />
           <Route path="/contactus" element={<ContactUs />} exact />
           <Route path="/resumebuilder" element={<ResumeBuilder />} exact />
+          <Route path="/rbform" element={<RBGoogleForm />} exact />
           <Route path="/articles" element={<Articles />} exact />
           <Route path="/article1" element={<Article1/>} exact />
           <Route path="/article2" element={<Article2/>} exact />
