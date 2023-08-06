@@ -9,7 +9,7 @@ const RBGoogleForm = ()=>{
                 <div>
                     <iframe
                     title="Google Form"
-                    src="https://forms.gle/FLRc6Ju8bDepsckJ9"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf30hycYl-yTLYZOuUSS7jP5AatWpNdNRYmTI5jjporyPX6Qw/viewform?usp=sf_link"
                     width="100%"
                     height="1000px"
                     >

@@ -26,7 +26,7 @@ const App = () => {
           <Route path="/job/:id" element={<Job />} exact />
           <Route path="/aboutus" element={<AboutUs />} exact />
           <Route path="/contactus" element={<ContactUs />} exact />
-          <Route path="/resumebuilder" element={<ResumeBuilder />} exact />
+          <Route path="/resumeenhancer" element={<ResumeBuilder />} exact />
           <Route path="/rbform" element={<RBGoogleForm />} exact />
           <Route path="/articles" element={<Articles />} exact />
           <Route path="/article1" element={<Article1/>} exact />

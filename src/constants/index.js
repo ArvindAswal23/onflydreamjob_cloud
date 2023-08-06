@@ -26,8 +26,8 @@ export const navLinks = [
     title: "Articles",
   },
   {
-    id: "resumeBuilder",
-    title: "Resume Builder"
+    id: "resumeenhancer",
+    title: "Resume Enhancer"
   }
 ];
 
