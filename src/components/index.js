@@ -14,7 +14,7 @@ import AllJobByDepartment from "./AllJobByDepartment";
 import ALlJobByType from "./AllJobByType";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
-import ResumeBuilder from "./resumeBuilder";
+import ResumeBuilder from "./ResumeBuilder";
 import Articles from "./Articles";
 import Article1 from "./Article1";
 import Article2 from "./Article2";
