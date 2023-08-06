@@ -25,6 +25,10 @@ export const navLinks = [
     id: "articles",
     title: "Articles",
   },
+  {
+    id: "resumeenhancer",
+    title: "Resume Enhancer"
+  }
 ];
 
 export const features = [

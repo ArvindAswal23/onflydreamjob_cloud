@@ -14,6 +14,7 @@ import AllJobByDepartment from "./AllJobByDepartment";
 import ALlJobByType from "./AllJobByType";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
+import ResumeBuilder from "./resumeBuilder";
 import Articles from "./Articles";
 import Article1 from "./Article1";
 import Article2 from "./Article2";
@@ -21,7 +22,7 @@ import Article3 from "./Article3";
 import LatestArticleSection from "./LatestArticleSection";
 import Article4 from "./Article4";
 import Article5 from "./Article5";
-import GovernmentJobs from "./GovernmentJobs";
+import RBGoogleForm from "./RBGoogleForm";
 export {
   NavBar,
   JobByDepartment,
@@ -43,8 +44,9 @@ export {
   Article1,
   Article2,
   Article3,
+  ResumeBuilder,
   LatestArticleSection,
   Article4,
   Article5,
-  GovernmentJobs
+  RBGoogleForm
 };

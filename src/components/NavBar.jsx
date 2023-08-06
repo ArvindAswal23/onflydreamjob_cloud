@@ -22,14 +22,14 @@ const NavBar = () => {
     {/* <img src={logo2} alt="onflydreamjoblogo" className='w-[124px] h-[32px]'/> */}
     <a  href ="/" className='font-poppins font-normal hover:text-sky-600 cursor-pointer text-[30px] text-white'> OnflyDreamJob</a>
    <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
-   {navLinks.map((nav,index)=>(
-    <li key={nav.id} className={`font-poppins font-normal hover:text-sky-600 cursor-pointer text-[16px] 
-     ${index === navLinks.length-1 ? 'mr-0' : 'mr-10'} text-white`}>
-      <a href={`/${nav.id}`}>  
-      {nav.title}
-       </a>
-    </li>
-   ))}
+    {navLinks.map((nav,index)=>(
+      <li key={nav.id} className={`font-poppins font-normal hover:text-sky-600 cursor-pointer text-[16px] 
+      ${index === navLinks.length-1 ? 'mr-0' : 'mr-10'} text-white`}>
+        <a href = {`${(nav.title === "Govt. Jobs") ? 'https://milegisarkarinaukri.online/' : `/${nav.id}` }`}>
+        {nav.title}
+        </a>
+      </li>
+    ))}
    </ul>
 
    <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -54,7 +54,8 @@ const NavBar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`/${nav.id}`}>{nav.title}</a>
+              <a href = {`${(nav.title === "Govt. Jobs") ? 'https://milegisarkarinaukri.online/' : `/${nav.id}` }`}>
+                  {nav.title}</a>
               </li>
             ))}
           </ul>
