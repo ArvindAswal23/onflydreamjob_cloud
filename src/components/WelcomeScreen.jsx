@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../style";
-
+import {NewFeatureCTA} from './index'
 const WelcomeScreen = () => {
   return (
     <section className={`flex md:flex-row flex-col ${styles.paddingY}`}>
@@ -13,8 +13,10 @@ const WelcomeScreen = () => {
           Give wings to your dream job</h6>
         <p className="mb-4 font-light text-gray-500 lg:mb-6 md:text-lg lg:text-xl dark:text-gray-400"> 
         “You can get everything in life you want if you will just help enough other people get what they want.” —Zig Ziglar</p>
+        <NewFeatureCTA/>
     </div>
 </section>
+
   )
 }
 

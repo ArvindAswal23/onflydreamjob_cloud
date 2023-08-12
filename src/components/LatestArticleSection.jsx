@@ -7,7 +7,7 @@ const LatestArticleSection = () => {
         <div>
             <aside aria-label="Latest articles" class="py-2 lg:py-4 bg-gray-700">
                 <div class="px-2 mx-auto max-w-screen-lg">
-                    <h2 class="mb-8 text-4xl font-bold text-white">Latest articles</h2>
+                    <h2 class="mb-8 text-4xl font-bold text-white">Latest Articles</h2>
                     <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
                         <article class="overflow-hidden rounded-lg shadow-lg">
 
