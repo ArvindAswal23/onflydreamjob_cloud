@@ -82,7 +82,7 @@ const ResumeBuilder = () => {
                 <div class="px-4 mx-auto max-w-screen-xl sm:py-12 lg:px-10">
                     <div class="mx-auto max-w-screen-sm text-center">
                         <Link to="/rbform">
-                            <button class="text-white bg-sky-800 hover:bg-sky-600 hover:ring-4 hover:ring-primary-300 font-bold py-3 px-6 rounded-full focus:outline-none">GET STARTED ▸</button>
+                            <button class="text-white bg-sky-800 hover:bg-sky-600 hover:ring-4 hover:ring-primary-300 font-bold py-3 px-6 rounded-full focus:outline-none" onClick={ () => window.scrollTo(0, 0) }>GET STARTED ▸</button>
                         </Link>
                         <h2 class="mt-4 text-2xl tracking-tight font-extrabold leading-tight text-gray-900 dark:text-white">Click above to generate your resume</h2>
                         <p class="my-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">We'll Take Care of Your Information.</p>

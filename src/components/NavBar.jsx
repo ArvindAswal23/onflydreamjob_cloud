@@ -25,7 +25,9 @@ const NavBar = () => {
     {navLinks.map((nav,index)=>(
       <li key={nav.id} className={`font-poppins font-normal hover:text-sky-600 cursor-pointer text-[16px] 
       ${index === navLinks.length-1 ? 'mr-0' : 'mr-10'} text-white`}>
-        <a href = {`${(nav.title === "Govt. Jobs") ? 'https://milegisarkarinaukri.online/' : `/${nav.id}` }`}>
+        <a href = {`${(nav.title === "Govt. Jobs") ? 'https://milegisarkarinaukri.online/' : `/${nav.id}` }`} 
+        target= {`${(nav.title === "Govt. Jobs") ? '_blank' : '' }`} 
+        >
         {nav.title}
         </a>
       </li>
