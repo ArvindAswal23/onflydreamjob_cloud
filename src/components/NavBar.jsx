@@ -56,7 +56,9 @@ const NavBar = () => {
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
-              <a href = {`${(nav.title === "Govt. Jobs") ? 'https://milegisarkarinaukri.online/' : `/${nav.id}` }`}>
+              <a href = {`${(nav.title === "Govt. Jobs") ? 'https://milegisarkarinaukri.online/' : `/${nav.id}` }`} 
+                 target= {`${(nav.title === "Govt. Jobs") ? '_blank' : '' }`}
+              > 
                   {nav.title}</a>
               </li>
             ))}
