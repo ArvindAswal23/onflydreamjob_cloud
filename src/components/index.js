@@ -24,6 +24,8 @@ import Article4 from "./Article4";
 import Article5 from "./Article5";
 import RBGoogleForm from "./RBGoogleForm";
 import NewFeatureCTA from "./NewFeatureCTA";
+import Builder from "./resumebuilder/builder";
+
 export {
   NavBar,
   JobByDepartment,
@@ -50,6 +52,7 @@ export {
   Article4,
   Article5,
   RBGoogleForm,
-  NewFeatureCTA
+  NewFeatureCTA,
+  Builder
 };
 
